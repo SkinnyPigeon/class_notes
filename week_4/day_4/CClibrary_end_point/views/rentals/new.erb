@@ -1,0 +1,20 @@
+<h2>New Rental</h2>
+
+<form action="/rentals" method="post">
+  <label for="book_id">Book:</label>
+  <select name="book_id">
+  <% @books.each do |book| %>
+    <option value="<%= book.id %>"><%= book.title %></option>
+  <% end %>
+  </select>
+  <label for="member_id">Member:</label>
+  <select name="member_id">
+  <% @members.each do |member| %>
+    <option value="<%= member.id %>"><%= member.name %></option>
+  <% end %>
+  </select>
+  <input type='submit' value="Add Rental!">
+</form>
+<br>
+<br>
+<a href="/">Back</a>

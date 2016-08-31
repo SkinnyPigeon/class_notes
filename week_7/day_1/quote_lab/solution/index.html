@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Frontend JS</title>
+  <script src='app.js'></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <header>
+   <div class="main-title">
+     <div class="lead-title">What the</div>
+     <div class="sub-title">Quotebox?!</div>
+   </div>
+  </header>
+  <main>
+    <intro>
+      <p id="tagline" class="tagline">Welcome to our super awesome quotes site full of super awesome quote goodness.</p>
+    </intro>
+    <section id="main" class="container content">
+      <aside>
+        <h2>Quote of the day</h2>
+        <blockquote>
+          That is quite obviously a frog.
+          <cite>
+            Jay Chetty
+          </cite>
+        </blockquote>
+      </aside>
+      <div>
+        <h2>Other Quotes</h2>
+        <ul id="quote-list"></ul>
+      </div>
+      <form id="quote-form">
+        <input type="text" id="quote-text-input" size="40" placeholder="Quote" autocomplete="off">
+        <input type="text" id="author-text-input" size="40" placeholder="Author" autocomplete="off">
+        <input type="submit" id="add-button" value="Add Quote">
+      </form>
+    </section>
+  </main>
+</body>
+</html>

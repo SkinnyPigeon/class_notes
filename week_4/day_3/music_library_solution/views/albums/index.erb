@@ -1,0 +1,17 @@
+<% if @albums.count > 0 %>
+<ul>
+<% @albums.each do |album| %> 
+  <li>
+    <a href="/albums/<%= album.id %>"><%= album.name %></a> by <%= album.artist.name %>
+  </li>
+<% end %>
+</ul>
+<% else %>
+  <p> Sorry there are no matching albums </p>
+<% end %>
+
+<form method="get">
+  Search by album name
+  <input name="search" value="" type="text" />
+  <input type="submit" value="search" />
+</form>
